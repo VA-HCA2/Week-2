@@ -13,7 +13,7 @@ if ( pos==-1)
         console.log("Name:"+fname);
         console.log("Only Name:"+fname);
     }
- // *else if (pos==" "," "," ") 
+ // 
    /* {
        let pos = name.indexOf(" ");
        fname = name.substring(0, pos);
