@@ -10,8 +10,10 @@ let objs = [
 
 // Compare if it's a<b return -1
 
-function compareNamesAscending(a, b) {
-    if (a.name < b.name) {
+function compareNamesAscending(a, b) 
+{
+    if (a.name < b.name)
+    {
         return -1;
     }
     return 1;
