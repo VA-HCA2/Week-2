@@ -5,11 +5,11 @@ let lunch=[ { item: "Steak fajitas", price: 9.95},
 ];
 
 
-function displayMeal(receipt) {
+function displayMeal(lunch) {
     let total = 0;
 
-    for (let i = 0; i < receipt.length; i++) {   
-        total+=receipt[i].price 
+    for (let i = 0; i < lunch.length; i++) {   
+        total+=lunch[i].price 
     }
     let bill = total*0.08 +(1.18*total)
     return bill;
