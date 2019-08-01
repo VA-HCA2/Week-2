@@ -1,9 +1,11 @@
 "use strict";
 let extraPerTopp = 0;
-let price=0;
+
 
 function priceTheDessert() {
+    
     let numScoops = document.getElementById("numScoops").value;
+    let price=0;
 
     if (numScoops==1) {
         price += 2.50;
@@ -42,6 +44,7 @@ function priceTheDessert() {
 }
   
 // Button 
+
 
 window.onload = function() {
 

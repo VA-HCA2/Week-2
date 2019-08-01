@@ -17,7 +17,7 @@ let menu =
 
     [
     { item: "Veggies and Salad", price: 4.49 },
-    { item: "Pizza and Soda", price: 5.49 },
+    { item: "Pizza and Soda", price: 5.49 },  menu[2][[1].item
     { item: "Soup and Juice", price: 2.49 },
     { item: "Pasta and Salad", price: 7.49 },
     { item: "Soup", price: 2.49 }
