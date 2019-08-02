@@ -17,27 +17,28 @@
 <body>
 
     <Main class="row no-gutters">
-        <section class="container col-md-3 left ">
-            <div class="row">
-                <div class="col">
+        <section class="container-fluid  col-5 left" >
+                <div class="border border-primary container-fluid ">
                     <h1 class="font-weight-bold">ACME Car Rental</h1>
-                    <form>
+                    <form class="form-group col-md-6">
                         <div>
-                            <label for="exampleInputEmail1">Pickup date:</label>
+                            <label for="pickUpDate">Pickup date:</label>
                             <input type="date" class="form-control" id="pickUpDate">
                         </div>
-                        <div>
-                            <label for="exampleInputEmail1">Number of Days: </label>
+                        <div >
+                            <label for="numOfDays">Number of Days: </label>
                             <input type="number" class="form-control" id="numOfDays" autocomplete="off">
                         </div>
+                        <div >
                         <p class="font-weight-bold">Car Type:</p>
-                        <select id="vehicles" name="size">
-                            <option value="ECO">Economy</option>
-                            <option value="COMP">Compact</option>
-                            <option value="INTER">Intermediate</option>
-                            <option value="FULL">Full Size</option>
+                        <select id="carType" name="size" >
+                            <option value="ECO">Economy $20.99</option>
+                            <option value="COMP">Compact $30.99</option>
+                            <option value="INTER">Intermediate $40.99</option>
+                            <option value="FULL">Full Size $50.99</option>
                         </select>
-                        <p class="font-weight-bold"> Options:</p>
+                        <div >
+                       <p class="font-weight-bold"> Options:</p>
                         <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="electronicToll" name=" electronicToll">
                             <label class="form-check-label" for="exampleCheck1">Electronic Toll Tag ($3.95/day) </label>
@@ -51,6 +52,7 @@
                         <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="roadSide" name="roadSide">
                             <label class="form-check-label" for="exampleCheck3">Roadside Assistance (5.95/day)</label>
+                        </div>
                         </div>
                         <p class="font-weight-bold">Under 25: </p>
                         <div class="form-check form-check-inline">
@@ -86,7 +88,6 @@
                             <input type="date" class="form-control" id="dropOffDate" autocomplete="off">
                         </div>
                     </form>
-                </div>
             </div>
         </section>
     </main>

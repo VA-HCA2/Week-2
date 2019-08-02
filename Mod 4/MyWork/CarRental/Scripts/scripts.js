@@ -41,10 +41,26 @@ function rentalPrice() {
     else {
         surcharge = 0;
     }
-
-    // Car Options
-
     
+       // Car Options
+       let carType = document.getElementById("carType").value;
+       let carCost=0;
+
+       if (carType == "ECO") {
+           carCost += 20.99
+   
+       }
+       else if (carType == "COMP") {
+           carCost += 30.99
+   
+       }
+       else if (carType == "INTER") {
+           carCost += 40.99
+   
+       }
+       else {
+           carCost += 50.99
+       }   
 
     //Total cost in the Car Rental box
 
@@ -62,7 +78,7 @@ function rentalPrice() {
 
 
     //Total Due:
-    totalDue = rentalCost + optionsCharges + surcharge
+    totalDue = rentalCost + optionsCharges + surcharge+carCost
     const total = document.getElementById("totalCost");
     total.value = totalDue.toFixed(2);
 
