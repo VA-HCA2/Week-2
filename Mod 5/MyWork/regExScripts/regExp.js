@@ -1,8 +1,6 @@
 "use strict";
-var codes=[ "K1A 0B1", "ABC 123","B3K 5X5","76126","K7H 1A6","B0J 1N0" ];
-let canadianPostalCode= /^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/;
 
-function getZipCode(zipCode)
+function getZipCode(canadianPostalCode, zipCode)
  {
     let message;
     if(canadianPostalCode.test(zipCode)==true)
@@ -12,6 +10,7 @@ function getZipCode(zipCode)
     else
     {
         message = zipCode + " is not a valid zip code";
+        console.log(canadianPostalCode.test(zipCode));
     }
     return message;
     
@@ -20,15 +19,17 @@ function getZipCode(zipCode)
 
 
 window.onload = function () {
-    let zipCodeOutput = document.getElementById("result")
-    let zipCodeInput = document.getElementById("zipCode")
-    
-    const btn = document.getElementById("zipCode");
+    let zipCodeInput = document.getElementById("zipCode");
+    let zipCodeOutput = document.getElementById("result");
+  
+    let canadianPostalCode= /^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/;
+  
+    const btn = document.getElementById("validateZip");
     btn.onclick = function()
     {
 
-        zipCode = getZipCode(zipCodeInput.value)
-
+        let zipCode = getZipCode(canadianPostalCode, zipCodeInput.value);
+        console.log(typeof zipCode);
         zipCodeOutput.value = zipCode;
         
     }
