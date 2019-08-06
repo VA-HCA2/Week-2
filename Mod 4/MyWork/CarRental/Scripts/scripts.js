@@ -62,6 +62,8 @@ function rentalPrice() {
            carCost += 50.99
        }   
 
+
+
     //Total cost in the Car Rental box
 
     const totalCst = document.getElementById("price");
